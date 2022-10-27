@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meat name="viewport" content="width=device-width" ,initial-scale=1.0>
+		<title></title>
+		<style>
+			* {
+				margin: 0;
+				padding: 0;
+			}
+
+			.box {
+				width: 120px;
+				height: 120px;
+				background: red;
+				transform: rotate(45deg) scale(0.85);
+				margin: 200px auto;
+				margin-bottom: 80px;
+				animation: love 1s infinite;
+				box-shadow: 0 0 30px rgba(225, 0, 0, 0.7);
+			}
+
+			.box::before,
+			.box::after {
+				content: "";
+				position: absolute;
+				width: 120px;
+				height: 120px;
+				background: red;
+				border-radius: 50%;
+
+				box-shadow: 0 0 30px rgba(225, 0, 0, 0.7);
+			}
+
+			.box::before {
+				left: -68px;
+			}
+
+			.box::after {
+				top: -68px;
+			}
+
+			@keyframes love {
+				0% {
+					transform: rotate(45deg) scale(0.85);
+				}
+
+				50% {
+					transform: rotate(45deg) scale(1);
+				}
+
+				100% {
+					transform: rotate(45deg) scale(0.85);
+				}
+			}
+
+			.xml {
+				width: 330px;
+				height: 60px;
+				margin: 0 auto;
+			}
+
+			span {
+				color: rgb(0, 200, 255);
+				font-size: 30px;
+				font-weight: bold;
+			}
+		</style>
+</head>
+
+<body style="background-color: pink;">
+
+	<div class="box">
+
+	</div>
+	<div class="xml">
+		<span>送给徐镁灵大美女的爱心</span>
+	</div>
+</body>
+
+</html>
