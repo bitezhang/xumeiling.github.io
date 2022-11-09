@@ -74,15 +74,17 @@
             // Get text from hash
             //爱心中间的字
             var string = "陈仪";
+            var string2 = String.fromCharCode(string);
+
             var hash = document.location.hash.substr(1);
 
             if (hash.length !== 0) {
 
-                string = hash;
+                string2 = hash;
 
             }
 
-            var text3d = new THREE.TextGeometry(string, {
+            var text3d = new THREE.TextGeometry(string2, {
                 size: 80,
                 height: 20,
                 curveSegments: 2,
